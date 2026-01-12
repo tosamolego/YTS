@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube-inspired • Filmy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Roboto, system-ui, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      border-bottom: 1px solid #222;
+      gap: 20px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: #ff0000;
+    }
+
+    .search {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search input {
+      width: 60%;
+      max-width: 560px;
+      padding: 10px 14px;
+      border-radius: 20px;
+      border: 1px solid #303030;
+      background: #121212;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    main {
+      padding: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      cursor: pointer;
+    }
+
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, #333, #555);
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 4px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">▶ MyTube</div>
+    <div class="search">
+      <input type="text" placeholder="Szukaj" />
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"></div>
+        <p class="title">Przykładowy film #1</p>
+        <p class="meta">Kanał Alpha • 120 tys. wyświetleń</p>
+      </div>
+
+      <div class="card">
+        <div class="thumb"></div>
+        <p class="title">Jak zrobić stronę jak YouTube</p>
+        <p class="meta">WebDev PL • 45 tys. wyświetleń</p>
+      </div>
+
+      <div class="card">
+        <div class="thumb"></div>
+        <p class="title">CSS Grid w 10 minut</p>
+        <p class="meta">Frontend TV • 89 tys. wyświetleń</p>
+      </div>
+
+      <div class="card">
+        <div class="thumb"></div>
+        <p class="title">Dark mode design tips</p>
+        <p class="meta">Design Lab • 210 tys. wyświetleń</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
